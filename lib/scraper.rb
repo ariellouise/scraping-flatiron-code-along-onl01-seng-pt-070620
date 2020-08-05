@@ -8,11 +8,7 @@ class Scraper
   def get_page 
     doc = Nokogiri::HTML(open("http://learn-co-curriculum.github.io/site-for-scraping/courses"))
   end 
-end 
 
-Scraper.new.get_page
-  
-  
   
   def print_courses
     self.make_courses
@@ -22,9 +18,9 @@ Scraper.new.get_page
         puts "  Schedule: #{course.schedule}"
         puts "  Description: #{course.description}"
       end
-    end
-  end
-end
+    end 
+  end  
+end 
 
 
 
